@@ -1,6 +1,6 @@
-name:                gitlab-hook-dingding
+name:                package
 version:             0.1.0.0
-github:              "diqye/gitlab-hook-dingding"
+github:              "diqye/package"
 license:             BSD3
 author:              "diqye"
 maintainer:          "262666212@qq.com"
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/diqye/gitlab-hook-dingding#readme>
+description:         Please see the README on GitHub at <https://github.com/diqye/package#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -26,7 +26,7 @@ library:
   source-dirs: src
 
 executables:
-  gitlab-hook-dingding-exe:
+  package-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -34,10 +34,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - gitlab-hook-dingding
+    - package
 
 tests:
-  gitlab-hook-dingding-test:
+  package-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -45,4 +45,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - gitlab-hook-dingding
+    - package
